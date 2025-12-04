@@ -6,7 +6,7 @@
 /*   By: wabin-wa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/30 12:24:41 by wabin-wa          #+#    #+#             */
-/*   Updated: 2025/12/04 20:51:48 by wabin-wa         ###   ########.fr       */
+/*   Updated: 2025/12/04 20:52:43 by wabin-wa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,9 @@
 # include <fcntl.h>
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1024
+# endif
+# ifndef MAX_FD
+#  define MAX_FD 100
 # endif
 
 char	*get_next_line(int fd);

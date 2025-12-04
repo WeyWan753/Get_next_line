@@ -6,7 +6,7 @@
 /*   By: wabin-wa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 10:26:58 by wabin-wa          #+#    #+#             */
-/*   Updated: 2025/12/04 19:43:22 by wabin-wa         ###   ########.fr       */
+/*   Updated: 2025/12/04 19:47:38 by wabin-wa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "get_next_line.h"
@@ -75,11 +75,12 @@ size_t	ft_strlen(const char *s)
 	return (count);
 }
 
-void	init_text(char *text)
+char	*init_text(char *text)
 {
 	if (text == 0)
 	{
 		text = malloc(1);
 		text[0] = 0;
 	}
+	return text;
 }

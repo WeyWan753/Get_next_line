@@ -6,7 +6,7 @@
 /*   By: wabin-wa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 10:27:06 by wabin-wa          #+#    #+#             */
-/*   Updated: 2025/12/04 19:42:16 by wabin-wa         ###   ########.fr       */
+/*   Updated: 2025/12/04 19:48:34 by wabin-wa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "get_next_line.h"
@@ -25,7 +25,7 @@ char	*read_first_line(char *text, int fd)
 	char	*buff;
 	int		bytes_read;
 
-	init_text(text);
+	text = init_text(text);
 	buff = malloc(BUFFER_SIZE + 1);
 	bytes_read = 1;
 	while (bytes_read > 0)
@@ -110,8 +110,6 @@ int main()
 		printf("%s",str);
 		free(str);
 	}
-
-
 
 }
 */

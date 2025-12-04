@@ -6,7 +6,7 @@
 /*   By: wabin-wa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 10:27:06 by wabin-wa          #+#    #+#             */
-/*   Updated: 2025/12/04 19:48:34 by wabin-wa         ###   ########.fr       */
+/*   Updated: 2025/12/04 20:02:51 by wabin-wa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "get_next_line.h"
@@ -92,6 +92,8 @@ char	*get_next_line(int fd)
 	static char	*text;
 	char		*output_text;
 
+	if (fd < 0 || BUFFER_SIZE <= 0)
+		return (0);
 	text = read_first_line(text, fd);
 	if (text == 0)
 		return (0);

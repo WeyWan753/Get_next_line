@@ -6,7 +6,7 @@
 /*   By: wabin-wa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/04 10:26:58 by wabin-wa          #+#    #+#             */
-/*   Updated: 2025/12/04 19:47:38 by wabin-wa         ###   ########.fr       */
+/*   Updated: 2025/12/04 19:51:46 by wabin-wa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "get_next_line.h"
@@ -82,5 +82,5 @@ char	*init_text(char *text)
 		text = malloc(1);
 		text[0] = 0;
 	}
-	return text;
+	return (text);
 }
